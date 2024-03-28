@@ -21,7 +21,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update;\
     apt-get --allow-unauthenticated --no-install-recommends -qy install curl libyaml-dev git libopus-dev \
     build-essential zlib1g zlib1g-dev libssl-dev mpd mpc tmux \
     automake autoconf libtool libogg-dev psmisc util-linux libgmp3-dev \
-    dialog unzip ca-certificates aria2 imagemagick ffmpeg python gnupg \
+    dialog unzip ca-certificates aria2 imagemagick ffmpeg python2 gnupg \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     adduser --quiet --disabled-password --uid 1000 --home /home/botmaster --shell /bin/bash botmaster
